@@ -1,4 +1,4 @@
-# Using React to Building Document Scanning App
+# Using React to Build Document Scanning App
 
 The demo shows how to use **React** to build a simple document scanning app.
 
