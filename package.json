@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/dwt": "^12.3.1",
-    "dwt": "^12.3.0",
+    "@types/dwt": "latest",
+    "dwt": "latest",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "script-loader": "^0.7.0"
