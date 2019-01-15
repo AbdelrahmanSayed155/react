@@ -24,3 +24,6 @@ The demo shows how to use **React** to build a simple document scanning app.
     ```
 
     ![Dynamic Web TWAIN with React](http://www.codepool.biz/wp-content/uploads/2017/05/react-dwt.PNG)
+    
+## Blog
+[React: Load Global JavaScript Library with Webpack](https://www.codepool.biz/react-webpack-load-javascript-library.html)
