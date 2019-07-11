@@ -8,16 +8,7 @@ The demo shows how to use **React** to build a simple document scanning app.
     ```bash
     npm install
     ```
-2. Add the rule to **node_modules/react-scripts/config/webpack.config.dev.js**:
-
-    ```javascript
-    {
-        test: /\.js$/,
-        include: path.join(paths.appNodeModules, 'dwt'),
-        loader: 'script-loader'
-    },
-    ```
-3. Build and run the app:
+2. Build and run the app:
 
     ```bash
     npm start
