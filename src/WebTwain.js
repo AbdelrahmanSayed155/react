@@ -1,7 +1,6 @@
-/*global Dynamsoft*/
 import React, { Component } from 'react';
 import './WebTwain.css';
-require("dwt");
+import Dynamsoft from 'dwt';
 
 export class WebTwain extends Component {
   constructor(props) {
