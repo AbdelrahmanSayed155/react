@@ -6,6 +6,17 @@ export class WebTwain extends Component {
   constructor(props) {
     super(props);
 
+    Dynamsoft.WebTwainEnv.AutoLoad = false;
+    /**
+     * In order to use the full version, do the following
+     * 1. Change Dynamsoft.WebTwainEnv.Trial to false
+     * 2. Replace A-Valid-Product-Key with a full version key
+     * 3. Change Dynamsoft.WebTwainEnv.ResourcesPath to point to the full version 
+     *    resource files that you obtain after purchasing a key
+     */
+    Dynamsoft.WebTwainEnv.Trial = true;
+    Dynamsoft.WebTwainEnv.ProductKey = "A-Valid-Product-Key";
+    Dynamsoft.WebTwainEnv.ResourcesPath="https://tst.dynamsoft.com/libs/dwt/15.0";
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
   }
