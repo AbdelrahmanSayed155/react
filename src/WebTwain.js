@@ -3,8 +3,7 @@ import './WebTwain.css';
 import Dynamsoft from 'dwt';
 
 export class WebTwain extends Component {
-  constructor(props) {
-    super(props);
+  componentDidMount() {
 
     Dynamsoft.WebTwainEnv.AutoLoad = false;
     /**
@@ -16,9 +15,13 @@ export class WebTwain extends Component {
      */
     Dynamsoft.WebTwainEnv.Trial = true;
     Dynamsoft.WebTwainEnv.ProductKey = "A-Valid-Product-Key";
-    Dynamsoft.WebTwainEnv.ResourcesPath="https://tst.dynamsoft.com/libs/dwt/15.0";
+    Dynamsoft.WebTwainEnv.ResourcesPath = "https://tst.dynamsoft.com/libs/dwt/15.0";
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  constructor(props) {
+    super(props);
   }
 
   loadDWT() {
